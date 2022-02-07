@@ -7,13 +7,24 @@ words = []
 for i in range(0, N):
     words.append(str(sys.stdin.readline().rstrip()))
     # word = input()
+    
 
-    for j in range(0, len(words[i])-1):
-        if words[i][j] != words[i][j+1]:
-            pass
-        elif words[i][j] == words[i][j+1:]:
-            result -= 1
-            break
 
 print(words)
 print(N)
+
+
+
+# Blog
+
+# N = int(input())
+# result = N
+# for i in range(0,N):
+#     word=input()
+#     for j in range(0,len(word)-1):
+#         if word[j]==word[j+1]:
+#             pass
+#         elif word[j] in word[j+1:]:
+#             result-=1
+#             break
+# print(result)
