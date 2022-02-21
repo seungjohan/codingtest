@@ -17,5 +17,3 @@ for road in roads:
     x, y = nx, ny
 
 print(x, y)
-
-
