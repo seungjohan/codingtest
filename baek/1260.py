@@ -1,7 +1,7 @@
 import sys
 from collections import deque
 
-def bfs(graph, n, visited):
+def bfs(n):
     queue = deque([n])
     visited[n] = True
 
@@ -15,7 +15,7 @@ def bfs(graph, n, visited):
                 visited[i] = True
 
 
-def dfs(graph, n, visited):
+def dfs(n):
     visited[n] = True
     print(n, end=' ')
 
@@ -39,7 +39,7 @@ for _ in range(m):
 for i in range(1, n+1):
     graph[i].sort()
 
-dfs(graph, v, visited)
+dfs(v)
 # initialize check list
 visited = [False] * (n + 1)
-bfs(graph, v, visited)
+bfs(v)
