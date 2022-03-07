@@ -14,5 +14,3 @@ if eat == size:
 if 
 
 print(step)
-
-
